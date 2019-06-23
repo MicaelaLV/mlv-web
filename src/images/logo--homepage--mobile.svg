@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="260px" height="260px" viewBox="0 0 260 260" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>logo--homepage--mobile</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logo--homepage--mobile" transform="translate(-167.000000, -78.000000)">
+            <g id="logo-homepage" transform="translate(172.000000, 114.000000)">
+                <polyline id="Path" stroke="#000000" stroke-width="2" points="130 26 130 142 182 141.865294"></polyline>
+                <polyline id="Path-2" stroke="#000000" stroke-width="2" points="145 24.2019417 186.458733 140 215 24"></polyline>
+                <polyline id="Path-3" stroke="#000000" stroke-width="2" points="123 187 123 0 96.0873045 51.2000306 77.3239708 0 47 115.622669"></polyline>
+                <text id="creative-web-develop" font-family="Manrope3-Medium, Manrope3" font-size="9" font-weight="400" line-spacing="26" letter-spacing="0.156521739" fill="#000000">
+                    <tspan x="10.4440217" y="171">creative web developer</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

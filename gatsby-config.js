@@ -14,18 +14,18 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-styled-components`,
-    `gatsby-transformer-sharp`, // gatsby images loader with nice loading speed and effects
+    `gatsby-transformer-sharp`, // gets Images loading with nice loading speed and effects
     `gatsby-plugin-sharp`,
-    { //this plugin allows users to add your site to their home screen on most mobile browsers
-      resolve: `gatsby-plugin-manifest`, 
+    'gatsby-transformer-remark', // gets Markdown reading capabilities to GraphQl
+    { 
+      resolve: `gatsby-plugin-manifest`, // gets users to add your site to their home screen on most mobile browsers
       options: {
         name: `MLV Web`,
         short_name: `MLV`,
         start_url: `/`,
         background_color: `#FFFFFF`,
         theme_color: `#FFA8B0`,
-        display: `standalone`,
-        icon: `src/images/favicon.ico` // This path is relative to the root of the site.
+        display: `standalone`
       }
     },
     {

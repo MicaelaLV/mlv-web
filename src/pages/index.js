@@ -3,27 +3,36 @@ import React from 'react'
 import styled from 'styled-components'
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
 
-import NavbarWrapper from '../molecules/navbar'
+import Navbar from '../organisms/navbar'
+import Main from '../organisms/main'
 
 
 // PERSONAL GENERAL STYLES
-import { device, fontSize, lineHeight } from '../styles/base-styles'
-import { colors } from '../styles/project-custom-styles'
+import { device } from '../styles/base-styles'
 
 // set global body styles
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
-    overflow-y: hidden;
+    overflow-y: auto;
+
+    @media ${device.desktopXs} {
+      overflow-y: hidden;
+    }
   }
 `
 
 const PageContainer = styled.div`
-  border: 1px solid ${colors.pink};
-  height: 100vh;
+  height: 100%;
+  overflow-y: auto;
   margin: 0;
   padding: 0;
-  width: 100vw;
+  
+  @media ${device.desktopXs} {
+    height: 100vh;
+    overflow-y: hidden;
+    width: 100vw;
+  }
 `
 
 export default () => (
@@ -32,8 +41,10 @@ export default () => (
     <React.Fragment>
       <GlobalStyle/>
         <PageContainer>
-          <h1>hello</h1>
-          <NavbarWrapper/>
+
+          <Navbar/>
+          <Main />
+
         </PageContainer>
     </React.Fragment>
   </ThemeProvider>
