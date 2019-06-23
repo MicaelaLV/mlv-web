@@ -1,6 +1,9 @@
 import React  from 'react'
 import styled from 'styled-components'
 
+// PERSONAL GENERAL STYLES
+import { device } from '../styles/base-styles'
+
 const LandingWrapper = styled.div`
   align-items: flex-start;  
   display: flex;
@@ -16,6 +19,12 @@ const LandingWrapper = styled.div`
     margin: -120px 0 0 0;
     margin-left: -70px;
     max-width: 95%;
+  }
+
+  @media ${device.desktopXs} {
+    display: none;
+    pointer-events: none;
+    user-select: none;
   }
 `
 
@@ -35,7 +44,7 @@ const LandingMobile = () => (
   <LandingWrapper>
     <img src="../images/plectrum--mobile--pink.png" alt="Hero Plethora of Rainbow Plectrums" className="plectrum"/>
     <LogoWrapper>
-      <img src="../images/logo--homepage--mobile.png" alt=""/>
+      <img src="../images/logo--homepage--mobile-lg.png" alt=""/>
     </LogoWrapper>
   </LandingWrapper>
 

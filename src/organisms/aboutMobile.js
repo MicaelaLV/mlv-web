@@ -1,6 +1,9 @@
 import React  from 'react'
 import styled from 'styled-components'
 
+// PERSONAL GENERAL STYLES
+import { device } from '../styles/base-styles'
+
 const AboutWrapper = styled.div`
   align-items: flex-start;  
   display: flex;
@@ -17,6 +20,12 @@ const AboutWrapper = styled.div`
     top: 30px;
     right: -100px;
     max-width: 100%;
+  }
+
+  @media ${device.desktopXs} {
+    display: none;
+    pointer-events: none;
+    user-select: none;
   }
 `
 
