@@ -2,6 +2,7 @@ import React  from 'react'
 import styled from 'styled-components'
 
 import Burger from '../atoms/burger'
+import NavbarAccordion from '../molecules/navbarAccordion'
 
 
 const NavbarWrapper = styled.div`
@@ -15,7 +16,7 @@ const NavbarWrapper = styled.div`
 const Navbar = () => (
 
   <NavbarWrapper>
-    <Burger/>
+    <NavbarAccordion/>
   </NavbarWrapper>
 
 )
